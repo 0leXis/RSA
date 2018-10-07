@@ -235,7 +235,7 @@
             this.buttonGenerateKeys.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonGenerateKeys.Location = new System.Drawing.Point(251, 180);
             this.buttonGenerateKeys.Name = "buttonGenerateKeys";
-            this.buttonGenerateKeys.Size = new System.Drawing.Size(127, 23);
+            this.buttonGenerateKeys.Size = new System.Drawing.Size(163, 23);
             this.buttonGenerateKeys.TabIndex = 12;
             this.buttonGenerateKeys.Text = "Сгенерировать ключи";
             this.buttonGenerateKeys.UseVisualStyleBackColor = true;
