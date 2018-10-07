@@ -43,6 +43,7 @@ namespace RSA
 
         private void buttonEncr_Click(object sender, EventArgs e)
         {
+            textBoxLog.Clear();
             if (textBoxOpenE.Text == "" || textBoxOpenN.Text == "")
                 MessageBox.Show("Открытый ключ не введён!");
             else
@@ -56,6 +57,7 @@ namespace RSA
 
         private void buttonDecr_Click(object sender, EventArgs e)
         {
+            textBoxLog.Clear();
             if (textBoxSecretD.Text == "" || textBoxSecretN.Text == "")
                 MessageBox.Show("Закрытый ключ не введён!");
             else
