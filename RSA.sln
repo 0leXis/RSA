@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28010.2003
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RSA", "RSA\RSA.csproj", "{E8CDCF73-1E1F-4AF5-85E9-F91BD14CBAEC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RSA_digital_signature", "RSA_digital_signature\RSA_digital_signature.csproj", "{238EAE23-53E0-480B-926C-1B6F53AB216C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{E8CDCF73-1E1F-4AF5-85E9-F91BD14CBAEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E8CDCF73-1E1F-4AF5-85E9-F91BD14CBAEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E8CDCF73-1E1F-4AF5-85E9-F91BD14CBAEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{238EAE23-53E0-480B-926C-1B6F53AB216C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{238EAE23-53E0-480B-926C-1B6F53AB216C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{238EAE23-53E0-480B-926C-1B6F53AB216C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{238EAE23-53E0-480B-926C-1B6F53AB216C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

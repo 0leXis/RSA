@@ -33,20 +33,24 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.textBoxMsg = new System.Windows.Forms.TextBox();
-            this.textBoxOpenE = new System.Windows.Forms.TextBox();
+            this.textBoxOpenEY = new System.Windows.Forms.TextBox();
             this.textBoxResult = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.textBoxLog = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBoxOpenN = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.textBoxOpenP = new System.Windows.Forms.TextBox();
+            this.textBoxOpenNG = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBoxSecretN = new System.Windows.Forms.TextBox();
+            this.textBoxSecretNP = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBoxSecretD = new System.Windows.Forms.TextBox();
+            this.textBoxSecretDX = new System.Windows.Forms.TextBox();
             this.buttonGenerateKeys = new System.Windows.Forms.Button();
+            this.radioButtonRSA = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -87,35 +91,35 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(6, 62);
+            this.label2.Location = new System.Drawing.Point(6, 55);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(21, 16);
+            this.label2.Size = new System.Drawing.Size(39, 16);
             this.label2.TabIndex = 3;
-            this.label2.Text = "N:";
+            this.label2.Text = "N(G):";
             // 
             // textBoxMsg
             // 
             this.textBoxMsg.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBoxMsg.Location = new System.Drawing.Point(103, 6);
             this.textBoxMsg.Name = "textBoxMsg";
-            this.textBoxMsg.Size = new System.Drawing.Size(432, 22);
+            this.textBoxMsg.Size = new System.Drawing.Size(502, 22);
             this.textBoxMsg.TabIndex = 5;
             this.textBoxMsg.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxMsg_KeyPress);
             // 
-            // textBoxOpenE
+            // textBoxOpenEY
             // 
-            this.textBoxOpenE.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBoxOpenE.Location = new System.Drawing.Point(32, 24);
-            this.textBoxOpenE.Name = "textBoxOpenE";
-            this.textBoxOpenE.Size = new System.Drawing.Size(219, 22);
-            this.textBoxOpenE.TabIndex = 6;
+            this.textBoxOpenEY.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBoxOpenEY.Location = new System.Drawing.Point(49, 24);
+            this.textBoxOpenEY.Name = "textBoxOpenEY";
+            this.textBoxOpenEY.Size = new System.Drawing.Size(202, 22);
+            this.textBoxOpenEY.TabIndex = 6;
             // 
             // textBoxResult
             // 
             this.textBoxResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBoxResult.Location = new System.Drawing.Point(69, 152);
             this.textBoxResult.Name = "textBoxResult";
-            this.textBoxResult.Size = new System.Drawing.Size(460, 22);
+            this.textBoxResult.Size = new System.Drawing.Size(536, 22);
             this.textBoxResult.TabIndex = 7;
             // 
             // label4
@@ -135,30 +139,50 @@
             this.textBoxLog.Multiline = true;
             this.textBoxLog.Name = "textBoxLog";
             this.textBoxLog.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBoxLog.Size = new System.Drawing.Size(490, 170);
+            this.textBoxLog.Size = new System.Drawing.Size(560, 170);
             this.textBoxLog.TabIndex = 9;
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBoxOpenN);
+            this.groupBox1.Controls.Add(this.label8);
+            this.groupBox1.Controls.Add(this.textBoxOpenP);
+            this.groupBox1.Controls.Add(this.textBoxOpenNG);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.textBoxOpenE);
+            this.groupBox1.Controls.Add(this.textBoxOpenEY);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.groupBox1.Location = new System.Drawing.Point(15, 34);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(257, 100);
+            this.groupBox1.Size = new System.Drawing.Size(257, 112);
             this.groupBox1.TabIndex = 10;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Открытый ключ:";
             // 
-            // textBoxOpenN
+            // label8
             // 
-            this.textBoxOpenN.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBoxOpenN.Location = new System.Drawing.Point(32, 59);
-            this.textBoxOpenN.Name = "textBoxOpenN";
-            this.textBoxOpenN.Size = new System.Drawing.Size(219, 22);
-            this.textBoxOpenN.TabIndex = 7;
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label8.Location = new System.Drawing.Point(6, 87);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(20, 16);
+            this.label8.TabIndex = 9;
+            this.label8.Text = "P:";
+            // 
+            // textBoxOpenP
+            // 
+            this.textBoxOpenP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBoxOpenP.Location = new System.Drawing.Point(49, 84);
+            this.textBoxOpenP.Name = "textBoxOpenP";
+            this.textBoxOpenP.Size = new System.Drawing.Size(200, 22);
+            this.textBoxOpenP.TabIndex = 8;
+            // 
+            // textBoxOpenNG
+            // 
+            this.textBoxOpenNG.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBoxOpenNG.Location = new System.Drawing.Point(49, 52);
+            this.textBoxOpenNG.Name = "textBoxOpenNG";
+            this.textBoxOpenNG.Size = new System.Drawing.Size(200, 22);
+            this.textBoxOpenNG.TabIndex = 7;
             // 
             // label6
             // 
@@ -166,9 +190,9 @@
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label6.Location = new System.Drawing.Point(6, 27);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(20, 16);
+            this.label6.Size = new System.Drawing.Size(37, 16);
             this.label6.TabIndex = 5;
-            this.label6.Text = "E:";
+            this.label6.Text = "E(Y):";
             // 
             // label5
             // 
@@ -182,25 +206,25 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.textBoxSecretN);
+            this.groupBox2.Controls.Add(this.textBoxSecretNP);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.label7);
-            this.groupBox2.Controls.Add(this.textBoxSecretD);
+            this.groupBox2.Controls.Add(this.textBoxSecretDX);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.groupBox2.Location = new System.Drawing.Point(278, 34);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(257, 100);
+            this.groupBox2.Size = new System.Drawing.Size(257, 112);
             this.groupBox2.TabIndex = 11;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Секретный ключ:";
             // 
-            // textBoxSecretN
+            // textBoxSecretNP
             // 
-            this.textBoxSecretN.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBoxSecretN.Location = new System.Drawing.Point(32, 59);
-            this.textBoxSecretN.Name = "textBoxSecretN";
-            this.textBoxSecretN.Size = new System.Drawing.Size(219, 22);
-            this.textBoxSecretN.TabIndex = 7;
+            this.textBoxSecretNP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBoxSecretNP.Location = new System.Drawing.Point(50, 52);
+            this.textBoxSecretNP.Name = "textBoxSecretNP";
+            this.textBoxSecretNP.Size = new System.Drawing.Size(201, 22);
+            this.textBoxSecretNP.TabIndex = 7;
             // 
             // label3
             // 
@@ -208,27 +232,27 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label3.Location = new System.Drawing.Point(6, 27);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(21, 16);
+            this.label3.Size = new System.Drawing.Size(37, 16);
             this.label3.TabIndex = 5;
-            this.label3.Text = "D:";
+            this.label3.Text = "D(X):";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label7.Location = new System.Drawing.Point(6, 62);
+            this.label7.Location = new System.Drawing.Point(6, 55);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(21, 16);
+            this.label7.Size = new System.Drawing.Size(38, 16);
             this.label7.TabIndex = 3;
-            this.label7.Text = "N:";
+            this.label7.Text = "N(P):";
             // 
-            // textBoxSecretD
+            // textBoxSecretDX
             // 
-            this.textBoxSecretD.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBoxSecretD.Location = new System.Drawing.Point(32, 24);
-            this.textBoxSecretD.Name = "textBoxSecretD";
-            this.textBoxSecretD.Size = new System.Drawing.Size(219, 22);
-            this.textBoxSecretD.TabIndex = 6;
+            this.textBoxSecretDX.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBoxSecretDX.Location = new System.Drawing.Point(50, 24);
+            this.textBoxSecretDX.Name = "textBoxSecretDX";
+            this.textBoxSecretDX.Size = new System.Drawing.Size(201, 22);
+            this.textBoxSecretDX.TabIndex = 6;
             // 
             // buttonGenerateKeys
             // 
@@ -241,11 +265,35 @@
             this.buttonGenerateKeys.UseVisualStyleBackColor = true;
             this.buttonGenerateKeys.Click += new System.EventHandler(this.buttonGenerateKeys_Click);
             // 
+            // radioButtonRSA
+            // 
+            this.radioButtonRSA.AutoSize = true;
+            this.radioButtonRSA.Checked = true;
+            this.radioButtonRSA.Location = new System.Drawing.Point(541, 61);
+            this.radioButtonRSA.Name = "radioButtonRSA";
+            this.radioButtonRSA.Size = new System.Drawing.Size(47, 17);
+            this.radioButtonRSA.TabIndex = 13;
+            this.radioButtonRSA.TabStop = true;
+            this.radioButtonRSA.Text = "RSA";
+            this.radioButtonRSA.UseVisualStyleBackColor = true;
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(535, 89);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(64, 17);
+            this.radioButton1.TabIndex = 14;
+            this.radioButton1.Text = "ElGamal";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(547, 391);
+            this.ClientSize = new System.Drawing.Size(609, 391);
+            this.Controls.Add(this.radioButton1);
+            this.Controls.Add(this.radioButtonRSA);
             this.Controls.Add(this.buttonGenerateKeys);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.label5);
@@ -275,20 +323,24 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBoxMsg;
-        private System.Windows.Forms.TextBox textBoxOpenE;
+        private System.Windows.Forms.TextBox textBoxOpenEY;
         private System.Windows.Forms.TextBox textBoxResult;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBoxLog;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBoxOpenN;
+        private System.Windows.Forms.TextBox textBoxOpenNG;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox textBoxSecretN;
+        private System.Windows.Forms.TextBox textBoxSecretNP;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBoxSecretD;
+        private System.Windows.Forms.TextBox textBoxSecretDX;
         private System.Windows.Forms.Button buttonGenerateKeys;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox textBoxOpenP;
+        private System.Windows.Forms.RadioButton radioButtonRSA;
+        private System.Windows.Forms.RadioButton radioButton1;
     }
 }
 
